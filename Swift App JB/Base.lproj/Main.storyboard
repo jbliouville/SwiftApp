@@ -30,6 +30,18 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xbR-br-Grb"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mPf-GI-OI6">
+                                <rect key="frame" x="158" y="102" width="59" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d02-Z8-1Sn">
+                                <rect key="frame" x="158" y="140" width="59" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -37,15 +49,22 @@
                             <constraint firstItem="njR-TV-Wm2" firstAttribute="top" secondItem="LuD-F4-GYW" secondAttribute="bottom" constant="3" id="FVh-eI-0IW"/>
                             <constraint firstItem="njR-TV-Wm2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LLz-D9-D1P"/>
                             <constraint firstItem="LuD-F4-GYW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZDw-sE-Ygd"/>
+                            <constraint firstItem="mPf-GI-OI6" firstAttribute="top" secondItem="njR-TV-Wm2" secondAttribute="bottom" constant="10" id="dBV-PE-2TD"/>
+                            <constraint firstItem="d02-Z8-1Sn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dlZ-0g-U91"/>
+                            <constraint firstItem="mPf-GI-OI6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="guI-qS-8Zf"/>
+                            <constraint firstItem="d02-Z8-1Sn" firstAttribute="top" secondItem="mPf-GI-OI6" secondAttribute="bottom" constant="10" id="su6-3J-Gnf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="coolLabel" destination="LuD-F4-GYW" id="7zH-kv-E1g"/>
+                        <outlet property="text1" destination="mPf-GI-OI6" id="CGj-bj-C4e"/>
+                        <outlet property="text2" destination="d02-Z8-1Sn" id="px8-gy-oyh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="33.733133433283363"/>
         </scene>
     </scenes>
 </document>
