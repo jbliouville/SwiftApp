@@ -14,8 +14,8 @@ class ViewController: UIViewController {
    var tapCount = 0
     @IBAction func buttonTapped(_ sender: Any) {
         tapCount=tapCount+1
-        if(tapCount) >= 10 {
-            print("wow you're a dude")
+        if(tapCount) >= 20 {
+            print("wow you're a duuude")
         }
         else{
             print("you're a pussy")
